@@ -1,0 +1,77 @@
+package com.nero.starx.hackjunction.pauligmo.Activities
+import android.content.Intent
+import android.os.Bundle
+import android.view.Menu
+import android.view.View
+import android.view.WindowManager
+import android.widget.Button
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.res.ResourcesCompat
+import com.facebook.drawee.backends.pipeline.Fresco
+import com.nero.starx.hackjunction.pauligmo.R
+import com.shreyaspatil.material.navigationview.MaterialNavigationView
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var navView: MaterialNavigationView
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Fresco.initialize(this)
+        setTheme(R.style.Theme_PAULIGMO)
+        setContentView(R.layout.activity_main)
+
+        val background = ResourcesCompat.getDrawable(resources,
+            R.drawable.background, theme)
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.setBackgroundDrawable(background)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        navView = findViewById(R.id.nav_view)
+        val navController = findNavController(R.id.nav_host_fragment)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.nav_supplies, R.id.nav_meals, R.id.nav_add,R.id.nav_about
+        ), drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+        setUpHeader()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun setUpHeader(){
+        val header: View = navView.getHeaderView(0)
+
+        val logout: Button = header.findViewById(R.id.login_button)
+
+        logout.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent).also {
+                finish()
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_supplies">
+
+    <fragment
+        android:id="@+id/nav_supplies"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.supplies.HomeFragment"
+        android:label="@string/supplies"
+        tools:layout="@layout/fragment_supplies" />
+
+    <fragment
+        android:id="@+id/nav_meals"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.meals.GalleryFragment"
+        android:label="@string/meals"
+        tools:layout="@layout/fragment_meals" />
+
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.add.AddMealFragment"
+        android:label="@string/add_fourniture"
+        tools:layout="@layout/fragment_addsupply" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.about.AboutFragment"
+        android:label="about_fragment"
+        tools:layout="@layout/about_fragment" />
+</navigation>
