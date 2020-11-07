@@ -7,10 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.client.adapters.SuppliesAdapter
-import com.nero.starx.hackjunction.client.models.Supply
+import com.nero.starx.hackjunction.client.adapters.CartItemAdapter
+import com.nero.starx.hackjunction.client.adapters.MealsAdapter
+import com.nero.starx.hackjunction.client.adapters.RecomendationAdapter
+import com.nero.starx.hackjunction.client.adapters.StoryAdapter
+import com.nero.starx.hackjunction.client.models.Meal
+import com.nero.starx.hackjunction.client.models.MealExtended
 import com.nero.starx.hackjunction.paulig.client.R
 
 class SupplyFragment : Fragment() {
@@ -35,15 +40,20 @@ class SupplyFragment : Fragment() {
 
   fun initRecycler(v:View){
     val recycler:RecyclerView = v.findViewById(R.id.supply_recycler)
+    val recommendRecycler:RecyclerView = v.findViewById(R.id.recycler_recommend)
     recycler.setHasFixedSize(false)
-    val manager = LinearLayoutManager(requireContext(),VERTICAL,false)
+    recommendRecycler.setHasFixedSize(false)
+    val manager = LinearLayoutManager(requireContext(), HORIZONTAL,false)
+    val verManager = LinearLayoutManager(requireContext(), VERTICAL,false)
     recycler.layoutManager = manager
-    val list = ArrayList<Supply>()
-    for(i in 1..13){
-      val supply = Supply("Supply num $i","CODE X1726$i","Type$i",i,"7-11-2020")
-      list.add(supply)
+    recommendRecycler.layoutManager = verManager
+    val list = ArrayList<Meal>()
+    for(i in 1..5){
+      val meal = Meal("Coffee X$i",9 + i, ArrayList())
+      list.add(meal)
     }
-    val adapter = SuppliesAdapter(list)
+    val adapter = StoryAdapter(list)
     recycler.adapter = adapter
+    recommendRecycler.adapter = RecomendationAdapter(list)
   }
 }

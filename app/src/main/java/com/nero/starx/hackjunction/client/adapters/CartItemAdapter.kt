@@ -2,15 +2,16 @@ package com.nero.starx.hackjunction.client.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.client.models.Supply
+import com.nero.starx.hackjunction.client.models.Meal
 import com.nero.starx.hackjunction.paulig.client.R
 
-class SuppliesAdapter(private val supplyList:ArrayList<Supply>)
-    :RecyclerView.Adapter<SuppliesAdapter.SupplyHolder>() {
+class CartItemAdapter(private val supplyList:ArrayList<Meal>)
+    :RecyclerView.Adapter<CartItemAdapter.SupplyHolder>() {
 
-    private var ItemsSupplyList = ArrayList<Supply>()
+    var ItemsSupplyList = ArrayList<Meal>()
     init {
         ItemsSupplyList = supplyList
     }
@@ -22,23 +23,25 @@ class SuppliesAdapter(private val supplyList:ArrayList<Supply>)
 
     override fun onBindViewHolder(holder: SupplyHolder, position: Int) {
         val item = ItemsSupplyList[position]
+
         holder.name.text = item.name
-        holder.code.text = item.code
-        holder.quantity.text = "Quantity: ${item.quantity}"
-        holder.date.text = "Date added: ${item.date}"
+        holder.price.text = "${item.price}Eur"
+        holder.delButton.setOnClickListener {
+            ItemsSupplyList.remove(item)
+            notifyDataSetChanged()
+        }
 
     }
 
     override fun getItemCount(): Int = ItemsSupplyList.size
 
     class SupplyHolder(inflater:LayoutInflater,parent:ViewGroup)
-        :RecyclerView.ViewHolder(inflater.inflate(R.layout.supply_item,parent,false)){
+        :RecyclerView.ViewHolder(inflater.inflate(R.layout.cart_item,parent,false)){
 
 
-        val name: TextView = itemView.findViewById(R.id.supply_name)
-        val code: TextView = itemView.findViewById(R.id.supply_code)
-        val quantity: TextView = itemView.findViewById(R.id.supply_quantity)
-        val date: TextView = itemView.findViewById(R.id.supply_date)
+        val name: TextView = itemView.findViewById(R.id.coffee_name)
+        val price: TextView = itemView.findViewById(R.id.coffee_price)
+        val delButton: Button = itemView.findViewById(R.id.delete_coffee)
     }
 }
 

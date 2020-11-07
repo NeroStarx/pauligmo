@@ -9,16 +9,12 @@
         android:menuCategory="container">
         <item
             android:id="@+id/nav_supplies"
-            android:icon="@drawable/ic_supplies"
+            android:icon="@drawable/ic_home"
             android:title="@string/supplies" />
         <item
             android:id="@+id/nav_meals"
             android:icon="@drawable/ic_meals"
             android:title="@string/meals" />
-        <item
-            android:id="@+id/nav_add"
-            android:icon="@drawable/ic_add"
-            android:title="@string/add_fourniture" />
     </group>
     <group
         android:id="@+id/grp2"

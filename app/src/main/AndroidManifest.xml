@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher2_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Launcher">
+        <activity android:name="com.nero.starx.hackjunction.client.Activities.CoffeeSection"></activity>
+        <activity android:name="com.nero.starx.hackjunction.client.Activities.CartActivity" />
         <activity android:name="com.nero.starx.hackjunction.client.Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -18,11 +18,6 @@
         tools:layout="@layout/fragment_meals" />
 
     <fragment
-        android:id="@+id/nav_add"
-        android:name="com.nero.starx.hackjunction.client.ui.add.AddMealFragment"
-        android:label="@string/add_fourniture"
-        tools:layout="@layout/fragment_addsupply" />
-    <fragment
         android:id="@+id/nav_about"
         android:name="com.nero.starx.hackjunction.client.ui.about.AboutFragment"
         android:label="@string/about"

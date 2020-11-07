@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nero.starx.hackjunction.client.adapters.MealsAdapter
@@ -35,7 +36,7 @@ class MealsFragment : Fragment() {
   private fun initRecycler(view: View) {
     val recycler: RecyclerView = view.findViewById(R.id.meal_recycler)
     recycler.setHasFixedSize(false)
-    val manager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
+    val manager = GridLayoutManager(requireContext(), 2,RecyclerView.VERTICAL,false)
     recycler.layoutManager = manager
     val list = ArrayList<Meal>()
     for(i in 1..10){
