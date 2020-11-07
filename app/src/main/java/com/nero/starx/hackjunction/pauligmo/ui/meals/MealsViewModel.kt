@@ -1,13 +1,13 @@
-package com.nero.starx.hackjunction.pauligmo.ui.supplies
+package com.nero.starx.hackjunction.pauligmo.ui.meals
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class MealsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 }

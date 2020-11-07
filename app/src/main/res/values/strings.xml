@@ -14,4 +14,9 @@
     <string name="logout">Logout</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="arrival_date">arrival date</string>
+    <string name="quantity">Quantity</string>
+    <string name="supply_type">Supply type</string>
+    <string name="supply_code">Supply code</string>
+    <string name="supply_name">Supply name</string>
 </resources>

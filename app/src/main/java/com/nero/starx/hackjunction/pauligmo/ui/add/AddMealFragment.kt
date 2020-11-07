@@ -22,9 +22,7 @@ class AddMealFragment : Fragment() {
     slideshowViewModel =
             ViewModelProvider(this).get(AddMealViewModel::class.java)
     val root = inflater.inflate(R.layout.fragment_addsupply, container, false)
-    val textView: TextView = root.findViewById(R.id.text_slideshow)
     slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
-      textView.text = it
     })
     return root
   }

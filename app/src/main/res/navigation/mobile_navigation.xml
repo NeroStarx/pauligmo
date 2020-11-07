@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_supplies"
-        android:name="com.nero.starx.hackjunction.pauligmo.ui.supplies.HomeFragment"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.supplies.SupplyFragment"
         android:label="@string/supplies"
         tools:layout="@layout/fragment_supplies" />
 
     <fragment
         android:id="@+id/nav_meals"
-        android:name="com.nero.starx.hackjunction.pauligmo.ui.meals.GalleryFragment"
+        android:name="com.nero.starx.hackjunction.pauligmo.ui.meals.MealsFragment"
         android:label="@string/meals"
         tools:layout="@layout/fragment_meals" />
 
@@ -25,6 +25,6 @@
     <fragment
         android:id="@+id/nav_about"
         android:name="com.nero.starx.hackjunction.pauligmo.ui.about.AboutFragment"
-        android:label="about_fragment"
+        android:label="@string/about"
         tools:layout="@layout/about_fragment" />
 </navigation>

@@ -11,23 +11,20 @@ android:paddingTop="10dp"
 android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingBottom="0dp">
 
-<com.facebook.drawee.view.SimpleDraweeView
-    android:id="@+id/account_image"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:layout_marginStart="2dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:elevation="8dp"
-    app:layout_constraintBottom_toTopOf="@+id/divider"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0"
-    app:roundAsCircle="true"
-    app:roundingBorderColor="@color/green_200"
-    app:roundingBorderWidth="3dp" />
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_acc" />
 
 <View
     android:id="@+id/divider"
