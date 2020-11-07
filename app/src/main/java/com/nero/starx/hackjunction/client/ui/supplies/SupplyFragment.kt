@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.ui.supplies
+package com.nero.starx.hackjunction.client.ui.supplies
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,9 +9,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.pauligmo.R
-import com.nero.starx.hackjunction.pauligmo.adapters.SuppliesAdapter
-import com.nero.starx.hackjunction.pauligmo.models.Supply
+import com.nero.starx.hackjunction.client.adapters.SuppliesAdapter
+import com.nero.starx.hackjunction.client.models.Supply
+import com.nero.starx.hackjunction.paulig.client.R
 
 class SupplyFragment : Fragment() {
 

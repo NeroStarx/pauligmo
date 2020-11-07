@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green_200">#84A441</color>
+    <color name="majenta_200">#BB3539</color>
     <color name="green_500">#84A441</color>
-    <color name="green_700">#9CDA1C</color>
-    <color name="teal_200">#84A441</color>
-    <color name="teal_700">#84A441</color>
+    <color name="green_700">#F3282E</color>
+    <color name="teal_200">#BB3539</color>
+    <color name="teal_700">#BB3539</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>

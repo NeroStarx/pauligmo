@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.ui.about
+package com.nero.starx.hackjunction.client.ui.about
 
 import androidx.lifecycle.ViewModel
 

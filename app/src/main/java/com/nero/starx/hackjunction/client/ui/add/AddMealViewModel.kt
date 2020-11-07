@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.ui.add
+package com.nero.starx.hackjunction.client.ui.add
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.Activities
+package com.nero.starx.hackjunction.client.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.res.ResourcesCompat
-import com.nero.starx.hackjunction.pauligmo.R
+import com.nero.starx.hackjunction.paulig.client.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,11 +1,11 @@
-package com.nero.starx.hackjunction.pauligmo.adapters
+package com.nero.starx.hackjunction.client.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.pauligmo.R
-import com.nero.starx.hackjunction.pauligmo.models.Supply
+import com.nero.starx.hackjunction.client.models.Supply
+import com.nero.starx.hackjunction.paulig.client.R
 
 class SuppliesAdapter(private val supplyList:ArrayList<Supply>)
     :RecyclerView.Adapter<SuppliesAdapter.SupplyHolder>() {

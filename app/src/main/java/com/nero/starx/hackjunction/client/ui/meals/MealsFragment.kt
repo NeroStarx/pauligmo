@@ -1,20 +1,16 @@
-package com.nero.starx.hackjunction.pauligmo.ui.meals
+package com.nero.starx.hackjunction.client.ui.meals
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.pauligmo.R
-import com.nero.starx.hackjunction.pauligmo.adapters.MealsAdapter
-import com.nero.starx.hackjunction.pauligmo.adapters.SuppliesAdapter
-import com.nero.starx.hackjunction.pauligmo.models.Meal
-import com.nero.starx.hackjunction.pauligmo.models.Supply
+import com.nero.starx.hackjunction.client.adapters.MealsAdapter
+import com.nero.starx.hackjunction.client.models.Meal
+import com.nero.starx.hackjunction.paulig.client.R
 
 class MealsFragment : Fragment() {
 

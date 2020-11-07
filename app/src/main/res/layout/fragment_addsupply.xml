@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fragment_background"
-    tools:context=".ui.add.AddMealFragment">
+    tools:context="com.nero.starx.hackjunction.client.ui.add.AddMealFragment">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/white_button_background"
-        android:backgroundTint="@color/green_200"
+        android:backgroundTint="@color/majenta_200"
         android:drawableEnd="@drawable/ic_arrow"
         android:drawablePadding="8dp"
         android:drawableTint="@color/white"

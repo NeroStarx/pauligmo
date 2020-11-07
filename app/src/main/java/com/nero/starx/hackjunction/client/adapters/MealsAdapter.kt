@@ -1,11 +1,11 @@
-package com.nero.starx.hackjunction.pauligmo.adapters
+package com.nero.starx.hackjunction.client.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.nero.starx.hackjunction.pauligmo.R
-import com.nero.starx.hackjunction.pauligmo.models.Meal
+import com.nero.starx.hackjunction.client.models.Meal
+import com.nero.starx.hackjunction.paulig.client.R
 
 class MealsAdapter(private val MealList:ArrayList<Meal>)
     :RecyclerView.Adapter<MealsAdapter.MealHolder>() {

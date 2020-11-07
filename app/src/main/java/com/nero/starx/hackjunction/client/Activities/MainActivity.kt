@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.Activities
+package com.nero.starx.hackjunction.client.Activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
 import com.facebook.drawee.backends.pipeline.Fresco
-import com.nero.starx.hackjunction.pauligmo.R
+import com.nero.starx.hackjunction.paulig.client.R
 import com.shreyaspatil.material.navigationview.MaterialNavigationView
 
 class MainActivity : AppCompatActivity() {

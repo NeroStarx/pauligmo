@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo.ui.about
+package com.nero.starx.hackjunction.client.ui.about
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.nero.starx.hackjunction.pauligmo.R
+import com.nero.starx.hackjunction.paulig.client.R
 
 class AboutFragment : Fragment() {
 

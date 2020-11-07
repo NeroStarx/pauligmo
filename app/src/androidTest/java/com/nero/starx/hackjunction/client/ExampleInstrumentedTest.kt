@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo
+package com.nero.starx.hackjunction.client
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.LoginActivity">
+    tools:context="com.nero.starx.hackjunction.client.Activities.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -111,7 +111,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/white_button_background"
-            android:backgroundTint="@color/green_200"
+            android:backgroundTint="@color/majenta_200"
             android:drawableEnd="@drawable/ic_arrow"
             android:drawablePadding="8dp"
             android:drawableTint="@color/white"

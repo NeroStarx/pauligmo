@@ -1,4 +1,4 @@
-package com.nero.starx.hackjunction.pauligmo
+package com.nero.starx.hackjunction.client
 
 import org.junit.Test
 

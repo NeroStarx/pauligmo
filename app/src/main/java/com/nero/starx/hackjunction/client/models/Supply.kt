@@ -1,3 +1,3 @@
-package com.nero.starx.hackjunction.pauligmo.models
+package com.nero.starx.hackjunction.client.models
 
 data class Supply(var name:String="",var code:String="",var type:String="",var quantity:Int=0,var date:String="")
